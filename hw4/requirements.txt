@@ -1,0 +1,22 @@
+#requirements for hw 4
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+from pathlib import Path
+import seaborn as sns
+
+import statsmodels.api as sm
+from scipy.stats import norm
+
+from sklearn.feature_selection import RFE
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import (
+    ConfusionMatrixDisplay,
+    RocCurveDisplay,
+    confusion_matrix,
+    roc_auc_score,
+)
+from sklearn.model_selection import StratifiedKFold, cross_val_score
+from sklearn.naive_bayes import GaussianNB, MultinomialNB
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import MinMaxScaler, StandardScaler
